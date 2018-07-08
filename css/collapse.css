@@ -1,0 +1,15 @@
+
+h3 {
+    height: 40px;
+    background-color: #EF5350;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+div {
+    background:#919b94
+}
+body{
+    margin-bottom: 10%;
+    height: 100%;
+}

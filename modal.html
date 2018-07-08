@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MODAL</title>
+    <link rel="stylesheet" href="css/modal.css">
+    <script
+              src="http://code.jquery.com/jquery-3.3.1.min.js"
+              integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+              crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <!--Open The Modal -->
+    <h1>My Modal</h1>
+    <div class="box">
+        <a class="button" href="#popup1">CLICK HERE</a>
+    </div>
+
+    <div id="popup1" class="overlay">
+        <div class="popup">
+            <h2>Hello</h2>
+            <a class="close x" href="#">&times;</a>
+            <div class="content">
+                Thank to pop me out of that button.Have a nice day.
+            </div>
+            <br/>
+            <a class="button x" href="">Close</a>
+        </div>
+    </div>
+</body>
+<script>
+    $(".overlay").hide();
+    $(".button").click(function () {
+        $(".overlay").show();
+    });
+    $(".x").click(function () {
+        $(".overlay").hide();
+    })
+</script>
+
+</html>
